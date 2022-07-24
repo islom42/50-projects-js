@@ -2,7 +2,7 @@
 
 | # Day         | Topic         | Watch Demo |
 | ------------- | ------------- | -----------
-| 1          |      Expanding cards|  |
+| 1          |      Expanding cards| [Live Demo](https://50-first-islomnumanov.netlify.app/)  |
 
 
 
