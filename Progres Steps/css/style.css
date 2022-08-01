@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+body {
+  font-family: "Roboto";
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f7fb;
+}
+
+.container {
+  text-align: center;
+}
+
+.progress-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 350px;
+  margin-bottom: 30px;
+}
+
+.progress-wrapper::before {
+  content: "";
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: -1;
+  height: 4px;
+  width: 100%;
+  transition: all 3s ease;
+}
+
+.progress-wrapper__line {
+  background-color: #3498db;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: -1;
+  height: 4px;
+  width: 0%;
+  transition: all .3s ease;
+}
+
+.progress-wrapper__circle {
+  background-color: #f6f7fb;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #e0e0e0;
+}
+
+.progress-wrapper__circle.active {
+  border-color: #3498db;
+}
+
+.btn {
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+  background-color: #3498db;
+  cursor: pointer;
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  outline: none;
+}
+
+.btn:active {
+  outline: none;
+  transform: scale(0.98);
+}
+
+.btn[disabled] {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
